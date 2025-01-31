@@ -18,47 +18,47 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Rahul")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Rahul')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))
+API_ID = int(environ.get('API_ID', '7851526'))
+API_HASH = environ.get('API_HASH', '93ba4db0ad662e558356871afe8ca6de')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7935496045:AAEv2kd0fjHqKMPUUbIq6oHEoO27P5zEcYU')
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1491913883').split()]
+USERNAME = environ.get('USERNAME', 'https://telegram.me/Suriya_M2L')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002350694058'))
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001670136532 -1002070372480 -1001718739968 -1001765415450 -1001951551775 -1001898212023 -1002057398189').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://aftest:aftest@cluster0.rjlq1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb://mongo:96bc66f1499c1e61a7c3@lovetoride_mongodb:27017/?tls=false")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002350694058'))
 QR_CODE = environ.get('QR_CODE', 'https://envs.sh/wam.jpg')
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001610274164').split()]
 
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', ''))
-URL = environ.get('URL', '')
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002350694058'))
+URL = environ.get('URL', 'https://switchle-auto3.zh4klt.easypanel.host/')
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
-TUTORIAL = environ.get("TUTORIAL", "https://youtu.be/0c-i2Lol6LU")
-TUTORIAL2 = environ.get("TUTORIAL2", "https://youtu.be/GdaUbzxDTKs")
-TUTORIAL3 = environ.get("TUTORIAL3", "https://youtu.be/rddlpYLm0G0")
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002350694058'))
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/How2Downloadz/4")
+TUTORIAL2 = environ.get("TUTORIAL2", "https://t.me/How2Downloadz/4")
+TUTORIAL3 = environ.get("TUTORIAL3", "https://t.me/How2Downloadz/4")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/45a270fc6a0a1c183c614.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "8c09653e5c38f84d1b76ad3197c5a023e53b494d")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "onepagelink.in")
-SHORTENER_API2 = environ.get("SHORTENER_API2", "0c8ebd63bfe9f67f9970b8767498ff60316b9b03")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "tnshort.net")
-SHORTENER_API3 = environ.get("SHORTENER_API3", "9c5a6c96077a1b499d8f953331221159383eb434")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "omegalinks.in")
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "3600"))
-THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "21600"))
+SHORTENER_API = environ.get("SHORTENER_API", "663f446757423b12fcf5e4a49bfb75f0798d0f80")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "tnvalue.in")
+SHORTENER_API2 = environ.get("SHORTENER_API2", "663f446757423b12fcf5e4a49bfb75f0798d0f80")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "tnvalue.in")
+SHORTENER_API3 = environ.get("SHORTENER_API3", "663f446757423b12fcf5e4a49bfb75f0798d0f80")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "tnvalue.in")
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "43200"))
+THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "43200"))
 
 # languages search
 LANGUAGES = ["hindi", "english", "telugu", "tamil", "kannada", "malayalam"]
 
-auth_channel = environ.get('AUTH_CHANNEL', '')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001546131221')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', -1001577428406''))
 
 # bot settings
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
